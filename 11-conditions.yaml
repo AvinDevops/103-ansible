@@ -1,5 +1,6 @@
 - name: conditions
   hosts: localhost
+  become: yes
   tasks: #list of tasks
   - name: check user exists or not
     ansible.builtin.command: id expense
