@@ -1,5 +1,6 @@
 - name: using advanced loop
   hosts: localhost
+  become: yes
   tasks: #list of tasks
   - name: installing and removing packages
     ansible.builtin.dnf:
