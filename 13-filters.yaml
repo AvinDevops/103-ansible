@@ -3,4 +3,4 @@
   tasks: #list of tasks
   - name: print value
     ansible.builtin.debug:
-      msg : "Hi, I am {{name|Avinash}}"
+      msg : "Hi, I am {{ name | default(Avinash) }}"
