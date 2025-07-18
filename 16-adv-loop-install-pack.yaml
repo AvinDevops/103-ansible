@@ -4,12 +4,12 @@
   tasks: #list of tasks
   - name: installing and removing packages
     ansible.builtin.dnf:
-      name: " {{ item.name }} "
-      state: " {{ item.state }} "
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
     # - { name: 'mysql', state: 'latest' }
     # - { name: 'nginx', state: 'absent' }
     # - { name: 'postfix', state: 'absent' }
-    - { name: 'mysql', state: 'absent'} # item
+    - { name: 'mysql', state: 'latest'} # item
     - { name: 'nginx', state: 'absent'}
     - { name: 'postfix', state: 'absent'}
