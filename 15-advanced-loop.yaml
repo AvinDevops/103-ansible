@@ -1,0 +1,11 @@
+- name: advanced loop
+  hosts: localhost
+  tasks: #list of tasks
+  - name: uisng advanced loop and installing packages
+    ansible.builtin.dnf:
+      name: " {{ item }} "
+      state: installed
+    loop:
+    - mysql
+    - nginx
+    - postfix
