@@ -1,5 +1,5 @@
 - name: using advanced loop
-  hosts: web
+  hosts: localhost
   become: yes
   tasks: #list of tasks
   - name: installing and removing packages
