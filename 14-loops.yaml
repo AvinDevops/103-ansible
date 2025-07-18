@@ -1,0 +1,10 @@
+- name: demo on loops
+  hosts: localhost
+  tasks: #list of tasks
+  - name: print names
+    ansible.builtin.debug:
+      msg: " {{ items }} "
+    loop:
+    - mysql
+    - nginx
+    - postfix
