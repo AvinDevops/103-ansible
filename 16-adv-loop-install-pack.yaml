@@ -1,0 +1,11 @@
+- name: using advanced loop
+  hosts: localhost
+  tasks: #list of tasks
+  - name: installing and removing packages
+    ansible.builtin.dnf:
+      name: " {{name.item}} "
+      state: " {{ state.item }} "
+    loop:
+    - {'name':'mysql' , 'state':'installed'}
+    - {'name':'nginx' , 'state':'absent'}
+    - {'name':'postfix' , 'state':'absent'}
