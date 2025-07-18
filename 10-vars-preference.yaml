@@ -1,7 +1,7 @@
 - name: varibale preferences
   hosts: localhost
-  vars: 
-    wishes: "Good Morning from play"
+  # vars: 
+  #   wishes: "Good Morning from play"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
