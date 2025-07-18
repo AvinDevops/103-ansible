@@ -10,7 +10,7 @@
     private: no
   tasks: #list of tasks
   - name: printing variables
-    vars:
-      wishes: "Good Morning from Task"
+    # vars:
+    #   wishes: "Good Morning from Task"
     ansible.builtin.debug:
       msg: "Hello, {{wishes}}"
