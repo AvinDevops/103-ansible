@@ -3,8 +3,10 @@
   vars_prompt:
   - name: course
     prompt: please enter your course
+    private: no
   - name: trainer
     prompt: please enter your trainer
+    private: no 
   tasks: #list of task
   - name: printing var through prompt
     ansible.builtin.debug:
