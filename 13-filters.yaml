@@ -13,3 +13,12 @@
   - name: print uppercase
     ansible.builtin.debug:
       msg: " {{ greetings | upper}} "
+
+- name: lowercase
+  hosts: localhost
+  vars:
+    greetings: "Hello Good Evening"
+  tasks: 
+  - name: print lowercase
+    ansible.builtin.debug:
+      msg: " {{ greetings | lower }} "
