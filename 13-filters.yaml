@@ -49,6 +49,10 @@
       trainer: Avinash
       duration: 120hrs
   tasks: #list of tasks
-  - name : print dict to list 
+  - name: before converting
+    ansible.builtin.debug:
+      msg: " {{ my_dict }}"
+
+  - name : after converting 
     ansible.builtin.debug:
       msg: " {{ my_dict | dict2items }} "
