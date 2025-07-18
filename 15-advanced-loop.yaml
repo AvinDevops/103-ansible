@@ -1,5 +1,6 @@
 - name: advanced loop
   hosts: localhost
+  become: yes
   tasks: #list of tasks
   - name: uisng advanced loop and installing packages
     ansible.builtin.dnf:
