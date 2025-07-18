@@ -1,7 +1,7 @@
 - name: variables at play level and task level
   hosts: localhost
   vars:
-    #course: "DevOps"
+    course: "DevOps"
     trainer: "Avinash"
     duration: "120hrs"
   tasks: #list of tasks
