@@ -1,0 +1,9 @@
+- name: conditions
+  hosts: localhost
+  tasks: #list of tasks
+  - name: check user exists or not
+    ansible.builtin.command: id expense
+
+  - name: end of ansible
+    ansible.builtin.debug:
+      msg: "reached end of ansible code"
