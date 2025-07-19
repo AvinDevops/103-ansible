@@ -1,0 +1,8 @@
+- name: command module vs shell module
+  hosts: localhost
+  tasks: # list of tasks
+  - name: command module
+    ansible.builtin.command: "echo 'Hi, Jesus Loves You, he died for you on the cross' > /tmp/command.txt"
+
+  - name: shell module
+    ansible.builtin.shell: "echo 'Hi, Jesus Loves You, he foegives you' > /tmp/shell.txt"
